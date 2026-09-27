@@ -1,0 +1,250 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário Modelo</title>
+
+    <style>
+        :root {
+            --cor-principal: #6a0dad;
+            --cor-secundaria: #9c27b0;
+            --cor-destaque: #d8b4fe;
+            --cor-fundo: #f5efff;
+            --cor-card: #ffffff;
+            --cor-texto: #2d163b;
+            --cor-texto-claro: #ffffff;
+            --cor-borda: #c4a7d7;
+            --sombra: 0 4px 15px rgba(80, 20, 120, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+        }
+
+        header {
+            background-color: var(--cor-principal);
+            color: var(--cor-texto-claro);
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        nav {
+            background-color: var(--cor-secundaria);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--cor-texto-claro);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--cor-destaque);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        form {
+            background-color: var(--cor-card);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--sombra);
+        }
+
+        .campo {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--cor-borda);
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        button {
+            background-color: var(--cor-principal);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            background-color: var(--cor-principal);
+            color: var(--cor-texto-claro);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header id="inicio">
+
+        <h1>Formulário de Cadastro</h1>
+
+        <p>Exemplo com 8 tipos diferentes de entrada</p>
+
+    </header>
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#formulario">Formulário</a>
+
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+    <main>
+
+        <form id="formulario">
+
+            <div class="campo">
+
+                <label for="nome">Nome completo</label>
+
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="email">E-mail</label>
+
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="senha">Senha</label>
+
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="idade">Idade</label>
+
+                <input type="number" id="idade" name="idade" min="1" max="120">
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="nascimento">Data de nascimento</label>
+
+                <input type="date" id="nascimento" name="nascimento">
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="telefone">Telefone</label>
+
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="cor">Escolha uma cor</label>
+
+                <input type="color" id="cor" name="cor">
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="arquivo">Enviar arquivo</label>
+
+                <input type="file" id="arquivo" name="arquivo">
+
+            </div>
+
+
+            <button type="submit">
+
+                Enviar
+
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer id="contato">
+
+        <p>
+            Exemplo de formulário HTML
+        </p>
+
+        <p>
+            Desenvolvido para fins educacionais
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
